@@ -92,7 +92,7 @@ const LoginScreen = ({ loginSuccess }) => {
             {errors.password && (
               <Text style={{ color: "red" }}>{errors.password.message}</Text>
             )}
-            <Button type="primary" onPress={handleSubmit(onSubmit)}>
+            <Button type="primary" onPress={handleSubmit(onSubmit)} style={{ color: "#1890ff" }}>
               Iniciar Sesión
             </Button>
           </Card.Body>

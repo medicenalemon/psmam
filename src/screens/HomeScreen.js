@@ -7,10 +7,10 @@ import {
   StatusBar,
   Keyboard,
   TouchableWithoutFeedback,
-  TouchableOpacity,
-  Button,
+  TouchableOpacity
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
+import { Button } from '@ant-design/react-native';
 import { Icon } from "react-native-elements";
 
 const HomeScrean = () => {
@@ -31,18 +31,13 @@ const HomeScrean = () => {
         <Text style={styles.welcomeText}>UTN-IEDS</Text>
         <Text style={styles.loginText}>Selecccione una opción</Text>
         <View>
-          <Button style={styles.loginButtonText} title="Login">
-            Login
+          <Button style={styles.loginButtonText} title="botonPropiedades">
+            Propiedades
           </Button>
         </View>
         <View>
-          <Button style={styles.loginButtonText} title="Login">
-            Login
-          </Button>
-        </View>
-        <View>
-          <Button style={styles.loginButtonText} title="Login">
-            Login
+          <Button style={styles.loginButtonText} title="botonFacturas">
+            Facturas
           </Button>
         </View>
       </LinearGradient>

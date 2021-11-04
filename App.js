@@ -12,6 +12,9 @@ import {
 
 import LoginScreen from "./src/screens/LoginScreen";
 import HomeScrean from "./src/screens/HomeScreen";
+import CreatePropertyScreen from "./src/screens/CreatePropertyScreen";
+import PropertyDetailScreen from "./src/screens/PropertyDetailScreen";
+import PropertyList from './src/screens/PropertyList';
 
 const Stack = createStackNavigator();
 
@@ -77,6 +80,9 @@ const App = () => {
                   ),
                 }}
               />
+              <Stack.Screen name="PropertyList" component={PropertyList} options={{ title: 'Listar Propiedades'}}/>
+              <Stack.Screen name="CreatePropertyScreen" component={CreatePropertyScreen} options={{ title: 'Crear Nueva Propiedad'}}/>      
+              <Stack.Screen name="PropertyDetailScreen" component={PropertyDetailScreen} options={{ title: 'Editar Propiedad'}}/>
             </>
           )}
         </Stack.Navigator>
