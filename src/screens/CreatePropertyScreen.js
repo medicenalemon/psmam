@@ -85,7 +85,7 @@ const CreatePropertyScreen = (props) => {
                     values={['Dueño', 'Inquilino']}
                     selectedIndex={this.state.owner}
                     onChange={(event) => {
-                    this.setState({owner: event.nativeEvent.selectedSegmentIndex});
+                        event.nativeEvent.selectedSegmentIndex === 'Dueño' ? this.setState({owner: true, tenant: false}) : this.setState({owner: false, tenant: true});
                     }}
                 />
             </View>

@@ -48,7 +48,7 @@ const PropertyDetailScreen = (props) => {
     }
 
     useEffect(() => {
-        getUserById(props.route.params.propertyId);
+        getPropertyById(props.route.params.propertyId);
     }, []);
 
     const handleChangeText = (name, value) => {
@@ -62,7 +62,7 @@ const PropertyDetailScreen = (props) => {
 
     const updateProperty = async() => {
         try {
-            await axios.post('https://6a69-181-94-254-32.ngrok.io/api/property', setState({
+            await axios.post('https://6a69-181-94-254-32.ngrok.io/api/property', setProperty({
                 name: property.name,
                 location: property.location,
                 department: property.department,
@@ -167,7 +167,7 @@ const PropertyDetailScreen = (props) => {
             <View style={styles.padding}>
                 <Button title="Actualizar" color="#00ee00" onPress={() => updateProperty()} />    
             </View>
-            <View>
+            <View style={styles.padding}>
                 <Button title="Eliminar" color="#ff0000" onPress={() => openConfirmationAlert()} />
             </View>
         </ScrollView>

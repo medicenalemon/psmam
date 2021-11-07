@@ -35,7 +35,7 @@ const PropertyList = (props) => {
                     );
                 })
             }
-            <Button title="Crear Propiedad" onPress={() => props.navigation.navigate("CreateUserScreen")} />
+            <Button title="Crear Propiedad" onPress={() => props.navigation.navigate("CreatePropertyScreen")} />
         </ScrollView>
     );
 

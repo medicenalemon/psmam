@@ -27,6 +27,7 @@
     "react-dom": "17.0.2",
     "react-hook-form": "^7.16.2",
     "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
+    "react-native-date-picker": "^4.1.1",
     "react-native-dropdown-picker": "^5.2.3",
     "react-native-elements": "^3.4.2",
     "react-native-gesture-handler": "^1.10.3",
